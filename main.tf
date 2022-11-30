@@ -72,7 +72,7 @@ resource "google_cloudbuild_trigger" "webhook-config-trigger" {
 
     step {
       name       = "gcr.io/cloud-builders/git"
-      args       = ["-c", "git clone https://gitlab-token:$$GITHUB_TOKEN@$${_REPO_URL} repo"]
+      args       = ["-c", "git clone https://github-access-token:$$GITHUB_TOKEN@$${_REPO_URL} repo"]
       entrypoint = "bash"
       secret_env = ["GITHUB_TOKEN"]
     }

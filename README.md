@@ -82,5 +82,5 @@ resource "google_storage_bucket" "test-bucket" {
 }
 ```
 
-Get the Cloud Build Trigger URL  and add a webhook in GitHub with the URL for a `pull request` event.
+Get the Cloud Build Trigger URL  and add a webhook in GitHub with the URL for a `pull request` event and change the Content-type to `application/json`.
 After Finishing with the setup, you can create a new branch and add some changes (like a `README.md` file) and commit and create a pull request to the `main` branch. This will trigger the Cloud Build and it will create a Bucket with the name `"test-bucket-${var.project}"`.
