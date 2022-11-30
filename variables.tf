@@ -11,5 +11,5 @@ variable "secret" {
   description = "webhook secret"
 }
 variable "web_trigger_name" {
-  defdefault = "webhook-trigger"
+  default = "webhook-trigger"
 }

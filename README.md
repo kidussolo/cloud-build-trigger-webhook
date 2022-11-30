@@ -25,7 +25,7 @@ This project creates the Central Cloud Build Trigger. For security reasons, you 
 
 Create a `terraform.auto.tfvars` file and add `github_access_token` and `secret` variables.
 
-> `github_access_token`: A GitHub access token. [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) is how to create one.
+> `github_access_token`: A GitHub access token. [here](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) is how to create one and Give it a Full controll of private repository scope.
 
 > `secret`: A string value used to create the secret.
 
